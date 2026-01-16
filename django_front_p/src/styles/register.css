@@ -1,25 +1,102 @@
-.password-group {
-  position: relative;
+/* Fondo general */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f172a;
+  padding: 2rem;
 }
 
-.toggle-password {
-  position: absolute;
-  right: 15px;
-  top: 38px;
+/* Tarjeta */
+.register-form {
+  background: #020617;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  color: #f8fafc;
+}
+
+/* Títulos */
+.register-form h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #cbd5f5;
+}
+
+/* Grupos */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Inputs */
+input,
+select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: #f8fafc;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Checkbox */
+.terms {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Botón */
+.btn-register {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
-  opacity: 0.7;
+  font-size: 15px;
 }
 
-.toggle-password:hover {
-  opacity: 1;
+.btn-register:hover {
+  background: #1d4ed8;
 }
 
-.email-warning {
-  margin-top: 8px;
-  font-size: 12px;
-  padding: 8px 12px;
-  background: rgba(255, 152, 0, 0.1);
-  border: 1px solid rgba(255, 152, 0, 0.3);
-  color: #ff9800;
-  border-radius: 4px;
+/* Link login */
+.login-link {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.link {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }

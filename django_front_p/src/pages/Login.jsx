@@ -12,8 +12,7 @@ function Login() {
   useEffect(() => {
     if (
       email &&
-      !email.includes(".edu.ec") &&
-      !email.includes("@epn.edu.ec")
+      !email.includes(".edu.ec")
     ) {
       setEmailWarning("💡 Recomendamos usar un correo universitario")
     } else {
@@ -71,13 +70,6 @@ function Login() {
             >
               {showPassword ? "🔒" : "👁️"}
             </span>
-
-            <div className="password-actions">
-              {/* esto puede seguir siendo <a> porque normalmente va a Django */}
-              <a href="#" className="link">
-                ¿Olvidaste tu contraseña?
-              </a>
-            </div>
           </div>
 
           <div className="form-group remember-me">

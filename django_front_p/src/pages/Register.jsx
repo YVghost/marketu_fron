@@ -48,23 +48,23 @@ function Register() {
 
         <form onSubmit={handleSubmit}>
           <div className="form-row">
-            <div className="form-group">
+            <div className="form-group terms">
               <label>Nombres *</label>
               <input name="nombres" onChange={handleChange} required />
             </div>
 
-            <div className="form-group">
+            <div className="form-group terms-group">
               <label>Apellidos *</label>
               <input name="apellidos" onChange={handleChange} required />
             </div>
           </div>
 
-          <div className="form-group">
+          <div className="form-group terms-group">
             <label>Apodo</label>
             <input name="apodo" onChange={handleChange} />
           </div>
 
-          <div className="form-group">
+          <div className="form-form-group terms">
             <label>Correo Universitario *</label>
             <input
               type="email"
@@ -74,7 +74,7 @@ function Register() {
             />
           </div>
 
-          <div className="form-group">
+          <div className="form-group terms-group">
             <label>Teléfono</label>
             <input
               name="telefono"
@@ -83,7 +83,7 @@ function Register() {
             />
           </div>
 
-          <div className="form-group">
+          <div className="form-group terms">
             <label>Universidad *</label>
             <select name="universidad" onChange={handleChange} required>
               <option value="">Seleccione</option>
@@ -92,7 +92,7 @@ function Register() {
             </select>
           </div>
 
-          <div className="form-group">
+          <div className="form-form-group terms">
             <label>Contraseña *</label>
             <input
               type="password"
@@ -102,7 +102,7 @@ function Register() {
             />
           </div>
 
-          <div className="form-group">
+          <div className="form-form-group terms">
             <label>Confirmar Contraseña *</label>
             <input
               type="password"

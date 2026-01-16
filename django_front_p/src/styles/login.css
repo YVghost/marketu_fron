@@ -1,0 +1,25 @@
+.password-group {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 38px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toggle-password:hover {
+  opacity: 1;
+}
+
+.email-warning {
+  margin-top: 8px;
+  font-size: 12px;
+  padding: 8px 12px;
+  background: rgba(255, 152, 0, 0.1);
+  border: 1px solid rgba(255, 152, 0, 0.3);
+  color: #ff9800;
+  border-radius: 4px;
+}
